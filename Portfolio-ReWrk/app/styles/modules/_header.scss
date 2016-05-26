@@ -1,0 +1,119 @@
+#header {
+  background-color: _palette(alt-bg);
+  border-radius: _size(border-radius) _size(border-radius) 0 0;
+  border-top: 0 !important;
+  position: relative;
+  text-align: center;
+
+  // Pennant (top part)
+    &:before {
+      background: _palette(accent1, bg);
+      content: '';
+      display: block;
+      height: 8em;
+      left: 50%;
+      margin-left: -2em;
+      position: absolute;
+      top: -6em;
+      width: 4em;
+    }
+
+  // Pennant (bottom part)
+    &:after {
+      // @include vendor('transform', 'rotate(45deg)');
+      background: _palette(accent1, bg);
+      content: '';
+      display: block;
+      height: 2.8em;
+      left: 50%;
+      margin-left: -1.4em;
+      position: absolute;
+      top: 0.615em;
+      width: 2.8em;
+    }
+
+  > header {
+    // padding: 8em $size-main-pad-lr 6em $size-main-pad-lr;
+
+    h1 {
+      font-size: 2.5em;
+      line-height: 1.5em;
+      margin: 0;
+    }
+
+    p {
+      border-top: solid 1px _palette(border);
+      color: _palette(fg-light);
+      display: inline-block;
+      font-size: 1.35em;
+      letter-spacing: 0.25em;
+      line-height: 2em;
+      // margin: (_size(element-margin) * 0.75) 0 0 0;
+      min-width: 50%;
+      // padding: (_size(element-margin) * 0.5) 0 0 0;
+      position: relative;
+      text-transform: uppercase;
+      top: -0.5em;
+    }
+  }
+
+  > nav {
+    border-top: solid 1px _palette(border);
+
+    > ul {
+      margin-bottom: 0;
+      padding: 0;
+
+      li {
+        border-left: solid 1px _palette(border);
+        display: inline-block;
+        line-height: 3.5em;
+        min-width: 20%;
+        padding: 0;
+
+        a {
+          // @include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
+          border: 0;
+          color: _palette(fg-light);
+          color: inherit;
+          display: block;
+          font-size: 0.8em;
+          letter-spacing: 0.25em;
+          padding: 0 2em;
+          text-decoration: none;
+          text-indent: 0.125em;
+          text-transform: uppercase;
+
+          &:hover {
+            background: _palette(border-bg);
+            color: _palette(fg-bold) !important;
+          }
+        }
+
+        &:first-child {
+          border-left: 0;
+        }
+      }
+    }
+  }
+
+  &.alt {
+    > header {
+      // padding: 5.5em $size-main-pad-lr 1.5em $size-main-pad-lr;
+
+      h1 {
+        display: inline;
+        font-size: 1.35em;
+      }
+
+      p {
+        display: inline;
+        border-top: 0;
+        margin: 0 0 0 0.35em;
+        padding: 0;
+        top: 0;
+        min-width: 0;
+      }
+    }
+  }
+}

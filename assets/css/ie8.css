@@ -1,0 +1,80 @@
+/*
+	Locus by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	body {
+		background-image: url("../../images/bg.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+	}
+
+/* List */
+
+	ul.icons li .icon {
+		border: 0;
+	}
+
+		ul.icons li .icon:before {
+			font-size: 1.5em;
+		}
+
+/* Form */
+
+	input[type="checkbox"] + label:before,
+	input[type="radio"] + label:before {
+		display: none;
+	}
+
+/* Image */
+
+	.image:before {
+		display: none;
+	}
+
+/* Header */
+
+	#header:before {
+		height: 8em;
+		top: -8em;
+	}
+
+	#header:after {
+		display: none;
+	}
+
+/* Banner */
+
+	#banner {
+		background-image: url("../../images/banner.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+		position: relative;
+	}
+
+		#banner:before {
+			background: url("images/overlay2.png");
+			content: '';
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		#banner > * {
+			position: relative;
+			z-index: 1;
+		}
+
+/* Footer */
+
+	#footer .icons {
+		left: 0;
+		width: 100%;
+	}

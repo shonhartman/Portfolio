@@ -1,0 +1,31 @@
+/* XLarge */
+
+	@media #{$xlarge} {
+
+		/* Basic */
+
+			body, input, select, textarea {
+				font-size: 13pt;
+			}
+
+	}
+
+/* Large */
+
+  @media #{$large} {
+
+		/* Basic */
+
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+		/* Header */
+
+			#header {
+				> header {
+					padding: 8em 0 6em 0;
+				}
+			}
+
+	}

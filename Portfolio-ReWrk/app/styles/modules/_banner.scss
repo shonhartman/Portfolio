@@ -1,0 +1,40 @@
+#banner {
+  background-color:			_palette(accent2, bg);
+  background-image:			url('images/overlay2.png'),		url('../../images/banner.jpg');
+  background-position:		top left,						center center;
+  background-repeat:			repeat,							no-repeat;
+  background-size:			auto,							cover;
+  border-top: 0 !important;
+  color: _palette(accent2, fg);
+  padding: 6em 3em;
+  text-align: center;
+
+  h2, h3, h4, h5, h6 {
+    color: _palette(accent2, fg-bold);
+  }
+
+  h2 {
+    margin: 0 0 _size(element-margin) 0;
+  }
+
+  .button {
+    border-color: _palette(accent2, border) !important;
+    color: _palette(accent2, fg-bold) !important;
+
+    &:hover {
+      background-color: _palette(accent2, border-bg);
+    }
+
+    &:active {
+      background-color: _palette(accent2, border2-bg);
+    }
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+#banner + section {
+  border-top: 0 !important;
+}

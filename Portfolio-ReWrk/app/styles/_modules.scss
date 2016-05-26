@@ -1,0 +1,55 @@
+@import "modules/section-article";
+@import "modules/form";
+@import "modules/image";
+@import "modules/list";
+@import "modules/button";
+@import "modules/header";
+@import "modules/banner";
+@import "modules/XL-L";
+@import "modules/medium";
+
+#wrapper {
+  background: _palette(bg);
+  border-radius: _size(border-radius);
+  margin-bottom: 3em;
+  margin-top: 6em;
+
+  > .main {
+    // @include padding($size-main-pad-tb, $size-main-pad-lr);
+  }
+
+  > section {
+    border-top: solid 1px _palette(border);
+  }
+}
+
+#footer {
+  background-color: _palette(alt-bg);
+  border-radius: 0 0 _size(border-radius) _size(border-radius);
+  // @include padding($size-main-pad-tb, $size-main-pad-lr);
+  text-align: center;
+
+  h2 {
+    font-size: 1.35em;
+    line-height: 1.75em;
+
+    & + p {
+      // margin: 0 0 (_size(element-margin) * 2) 0;
+    }
+  }
+
+  .icons {
+    border-top: solid 1px _palette(border);
+    // left: ($size-main-pad-lr * -1);
+    margin: 0;
+    padding: _size(element-margin) 0;
+    position: relative;
+    // top: ($size-main-pad-tb - _size(element-margin));
+    // width: calc(100% + #{$size-main-pad-lr * 2});
+  }
+}
+
+#copyright {
+  margin-bottom: 6em;
+  text-align: center;
+}

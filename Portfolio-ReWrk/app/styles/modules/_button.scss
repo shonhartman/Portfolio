@@ -1,0 +1,85 @@
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button {
+  // @include vendor('appearance', 'none');
+  // @include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
+  background-color: transparent;
+  border-radius: _size(border-radius);
+  border: solid 1px _palette(border2) !important;
+  color: _palette(fg-bold) !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: _font(weight-bold);
+  height: 3.5em;
+  letter-spacing: 0.25em;
+  line-height: 3.35em;
+  padding: 0 3em;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0.25em;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &:hover {
+    background: _palette(border-bg);
+    color: _palette(fg-bold) !important;
+  }
+
+  &:active {
+    background: _palette(border2-bg);
+  }
+
+  &.icon {
+    &:before {
+      margin: 0 0.5em 0 -0.25em;
+    }
+  }
+
+  &.fit {
+    display: block;
+    // margin: 0 0 (_size(element-margin) * 0.5) 0;
+    width: 100%;
+  }
+
+  &.small {
+    font-size: 0.6em;
+  }
+
+  &.big {
+    font-size: 1.1em;
+    height: 3.25em;
+    line-height: 3.15em;
+    padding: 0 2em;
+  }
+
+  &.special {
+    background-color: _palette(accent1, bg);
+    border-color: _palette(accent1, bg) !important;
+    color: _palette(accent1, fg-bold) !important;
+
+    &:hover {
+      // background-color: lighten(_palette(accent1, bg), 5);
+      // border-color: lighten(_palette(accent1, bg), 5) !important;
+    }
+
+    &:active {
+      // background-color: darken(_palette(accent1, bg), 5);
+      // border-color: darken(_palette(accent1, bg), 5) !important;
+    }
+  }
+
+  &.disabled,
+  &:disabled {
+    cursor: default;
+    opacity: 0.25;
+    background-color: _palette(border2-bg) !important;
+    border-color: _palette(border2) !important;
+
+    &:hover, &:active {
+      background-color: _palette(border2-bg) !important;
+      border-color: _palette(border2) !important;
+    }
+  }
+}
