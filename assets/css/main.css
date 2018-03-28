@@ -1553,7 +1553,7 @@
 	body {
 		background-color: #23141f;
 		background-attachment: scroll,							fixed;
-		background-image: url("images/server-background-photo.jpg"), url("../../images/server-background-photo.jpg");
+		background-image: url("images/server-background-photo1.jpg"), url("../../images/server-background-photo1.jpg");
 		background-position: top left,						top center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
@@ -1616,7 +1616,7 @@
 	}
 
 	h3 {
-		font-size: 1.35em;
+		font-size: 1em;
 		line-height: 1.75em;
 	}
 
@@ -2479,7 +2479,7 @@
 
 		.main.style2 > section .content {
 			display: inline-block;
-			padding: 1.5em 3em;
+			padding: 0 3em;
 			vertical-align: middle;
 			width: 53%;
 		}
